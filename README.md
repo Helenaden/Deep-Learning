@@ -7,12 +7,12 @@ This repository contains a series of hands-on deep learning projects, starting f
 1.  [Image Classification with the MNIST Dataset](#1-image-classification-with-the-mnist-dataset)
 2.  [Image Classification of an American Sign Language Dataset](#2-image-classification-of-an-american-sign-language-dataset)
 3.  [Convolutional Neural Networks](#3-convolutional-neural-networks)
-4a.  [Data Augmentation](#4-data-augmentation)
-4b.  [Deploying Your Model](#5-deploying-your-model)
-5a.  [Pre-Trained Models](#6-pre-trained-models)
-5b.  [Transfer Learning](#7-transfer-learning)
-6.  [Natural Language Processing (NLP)](#8-natural-language-processing-nlp)
-7.  [Fresh and Rotten Fruit Recognition](#9-fresh-and-rotten-fruit-recognition)
+4.  [Data Augmentation](#4-data-augmentation)
+5.  [Deploying Your Model](#5-deploying-your-model)
+6.  [Pre-Trained Models](#6-pre-trained-models)
+7.  [Transfer Learning](#7-transfer-learning)
+8.  [Natural Language Processing (NLP)](#8-natural-language-processing-nlp)
+9.  [Fresh and Rotten Fruit Recognition](#9-fresh-and-rotten-fruit-recognition)
 
 # 1. Image Classification with the MNIST Dataset
 
