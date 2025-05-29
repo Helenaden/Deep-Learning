@@ -1,25 +1,25 @@
 # Deep-Learning Projects
 
-This repository contains a series of hands-on deep learning projects, starting from foundational concepts like image classification with simple neural networks to advanced techniques like transfer learning and natural language processing with BERT. Each project builds upon the previous one, offering a comprehensive learning path in applied deep learning.
+This repository contains a series of hands-on deep learning projects, starting from foundational concepts like image classification with simple neural networks to advanced techniques such as transfer learning and natural language processing with BERT. Each project builds upon the previous one, offering a comprehensive learning path in applied deep learning.
 
-## Table of Contents
+# Table of Contents
 
 1.  [Image Classification with the MNIST Dataset](#1-image-classification-with-the-mnist-dataset)
 2.  [Image Classification of an American Sign Language Dataset](#2-image-classification-of-an-american-sign-language-dataset)
 3.  [Convolutional Neural Networks](#3-convolutional-neural-networks)
-4.  [Data Augmentation](#4-data-augmentation)
-5.  [Deploying Your Model](#5-deploying-your-model)
-6.  [Pre-Trained Models](#6-pre-trained-models)
-7.  [Transfer Learning](#7-transfer-learning)
-8.  [Natural Language Processing (NLP)](#8-natural-language-processing-nlp)
-9.  [Fresh and Rotten Fruit Recognition](#9-fresh-and-rotten-fruit-recognition)
+4a.  [Data Augmentation](#4-data-augmentation)
+4b.  [Deploying Your Model](#5-deploying-your-model)
+5a.  [Pre-Trained Models](#6-pre-trained-models)
+5b.  [Transfer Learning](#7-transfer-learning)
+6.  [Natural Language Processing (NLP)](#8-natural-language-processing-nlp)
+7.  [Fresh and Rotten Fruit Recognition](#9-fresh-and-rotten-fruit-recognition)
 
 # 1. Image Classification with the MNIST Dataset
 
 This section introduces the "Hello World" of deep learning: training a deep learning model to correctly classify hand-written digits. It's a foundational step to understand the basic workflow of a deep learning project.
 
 # Objectives
-* Understand how deep learning can solve problems traditional programming methods cannot.
+* Understand how deep learning can solve problems that traditional programming methods cannot.
 * Learn about the MNIST handwritten digits dataset.
 * Use `torchvision` to load the MNIST dataset and prepare it for training.
 * Create a simple neural network to perform image classification.
@@ -41,7 +41,7 @@ Building on the MNIST experience, this project applies the data preparation, mod
 * Train an image classification model and observe the results.
 
 # Key Concepts
-* Applying deep learning workflow to a new dataset.
+* Applying a deep learning workflow to a new dataset.
 * Basic Model Training Loop.
 
 # 3. Convolutional Neural Networks
