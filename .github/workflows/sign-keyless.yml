@@ -1,0 +1,44 @@
+name: Cosign Keyless Signing Demo
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # CRUCIAL: Grants access to the OIDC token
+      packages: write # Required to push to GHCR
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository }} # Use GHCR
+          tags: type=sha
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push image
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          # The resulting image tag will be used in the signing step
+
+      - name: Sign the image keylessly with Cosign
+        uses: sigstore/cosign-installer@v3
+      - name: Sign
+        run: |
+          IMAGE_TAG="${{ steps.meta.outputs.tags }}"
+          # Workflow Step 4: Keyless signing command.
+          # The OIDC token proves the image was signed by this specific GitHub workflow.
+          cosign sign --yes $IMAGE_TAG
