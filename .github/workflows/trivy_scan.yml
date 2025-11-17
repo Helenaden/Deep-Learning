@@ -20,12 +20,14 @@ jobs:
 
       # --- SBOM GENERATION (NEW STEP) ---
       - name: Generate SBOM (CycloneDX format)
+        if: always()
         run: |
           # The Trivy action handles installation, so you can call 'trivy' directly here.
           trivy image --format cyclonedx --output sbom.json peace5/cosign-failure-test:1.0
       
       # --- ARTIFACT UPLOAD (NEW STEP) ---
       - name: Upload SBOM as Artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ${{ github.sha }}_sbom
